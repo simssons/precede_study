@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <title>Document</title>
+  <script>
+  $(function(){
+    $('.gnb').hover(function(){
+      $('span.blue_line').fadeIn();
+      $('.gnb_scd_depth').stop().slideDown();
+    },function(){
+      $('span.blue_line').fadeOut();
+      $('.gnb_scd_depth').stop().slideUp();
+    })
+
+    //hover시 글씨변경
+    $('.gnb_scd_depth').hover(function(){
+      var listIndex = $(this).parent('li').index();
+      $('.gnb>li:eq(' + listIndex +') > a').css({'color':'#15a2ee','font-weight':'bold'})
+    },function(){
+        $('.gnb>li> a').css({'color':'','font-weight':''})
+    })
+
+
+    //slide 동작
+    $('.slide_btn').click(function(){
+      $(this).parent('li').siblings().find('p').fadeOut(500).siblings('button').removeClass('btn_on');
+      $(this).addClass('btn_on').siblings().fadeIn(500);
+    })
+
+  })
+
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+          <div class="top_menu">
+            <a href="">
+              <span>home</span>
+            </a>
+            <a href="">
+              <span>sitemap</span>
+            </a>
+          </div>
+          <div class="inner">
+            <span class="blue_line"></span>
+            <div class="navigation">
+              <h1>
+                <a href="">
+                  <img src="images/main/main_logo.jpeg" alt="국민대학교 SSEV 특화전문인력양성사업단">
+                </a>
+              </h1>
+              <ul class="gnb">
+                <li>
+                  <a href="">사업단소개</a>
+                  <ul class="gnb_scd_depth clear">
+                    <li><a href="">사업 소개</a></li>
+                    <li><a href="">비전 및 목표</a></li>
+                    <li><a href="">사업 신청서</a></li>
+                    <li><a href="">오시는 길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">연구인력</a>
+                  <ul class="gnb_scd_depth">
+                    <li><a href="">참여교수</a></li>
+                    <li><a href="">신진연구인력</a></li>
+                    <li><a href="">참여대학원생</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">사업성과</a>
+                  <ul class="gnb_scd_depth">
+                    <li><a href="">논문</a></li>
+                    <li><a href="">특허 및 기술이전</a></li>
+                    <li><a href="">국제화활동</a></li>
+                    <li><a href="">사업단 행사 개최</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">SSEV과정</a>
+                  <ul class="gnb_scd_depth">
+                    <li><a href="">교과과정</a></li>
+                    <li><a href="">학과 공지사항</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">자료실</a>
+                  <ul class="gnb_scd_depth">
+                    <li><a href="">양식함</a></li>
+                    <li><a href="">SSEV letter</a></li>
+                    <li><a href="">언론속의 SSEV</a></li>
+                    <li><a href="">포토뉴스</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">게시판</a>
+                  <ul class="gnb_scd_depth">
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">Q&amp;A</a></li>
+                    <li><a href="">BK월간일정</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </header>
+    <section class="slide_section">
+      <h2 class="ir">slide_section</h2>
+      <div class="slide_wrapper">
+        <ul>
+          <li>
+            <button type="button" name="button" class="slide_btn btn_on"></button>
+            <p class="slide_01"></p>
+          </li>
+          <li>
+            <button type="button" name="button" class="slide_btn"></button>
+            <p class="slide_02"></p>
+          </li>
+          <li>
+            <button type="button" name="button" class="slide_btn"></button>
+            <p class="slide_03"></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- slide_section -->
+
+    <section class="notice_news">
+      <div class="notice">
+        <h2>공지사항</h2>
+        <a href="" class="more_link">더보기</a>
+        <ol>
+          <li>
+            <div class="notice_date">
+              <div class="date"><span>08</span></div>
+              <p>2017.09</p>
+            </div>
+            <div class="notice_continer">
+              <div>
+                <span>[BK21플러스사업] BK21 플러스 사업 규정집(2017.06)</span>
+              </div>
+              <div>
+                <span>BK21 플러스 사업 규정집입니다.참고바랍니다.</span>
+              </div>
+              <a href="" class="notice_more">[자세히보기]</a>
+            </div>
+          </li>
+          <li>
+            <div class="notice_date">
+              <div class="date"><span>04</span></div>
+              <p>2017.04</p>
+            </div>
+            <div class="notice_continer">
+              <div>
+                <span>[SSEV] 5차년도 예산 사용시 절차 및 제출서류 안내</span>
+              </div>
+              <div>
+                <span>① BK21플러스 사업 예산② 대학원학생수별실험실습비 예산</span>
+              </div>
+              <a href="" class="notice_more">[자세히보기]</a>
+            </div>
+          </li>
+          <li>
+            <div class="notice_date">
+              <div class="date"><span>04</span></div>
+              <p>2017.04</p>
+            </div>
+            <div class="notice_continer">
+              <div>
+                <span>[BK21플러스사업] 예산편성 및 집행기준(2017.03.03 개정)</span>
+              </div>
+              <div>
+                <span></span>
+              </div>
+              <a href="" class="notice_more">[자세히보기]</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="news_feed">
+        <h2>포토뉴스</h2>
+        <a href="" class="more_link">더보기</a>
+        <ul class="news_feed_list">
+          <li class="photo_li">
+            <a href="" class="news_img">
+              <img src="images/main/pt_news_01.jpeg" alt="">
+            </a>
+            <div class="news_container">
+              <div class="news_title">
+                <a href="">[행사] 해외 석학 초빙 세미나 (2017.09.01)</a>
+              </div>
+              <div class="news_contents">
+                <a href="">2017.09.01(금) 10:30 ~ 12:00해외 석학 초빙 세미나 개최 - Francesco Borrelli (미국 버클리대학교 교수)</a>
+              </div>
+              <div class="news_date">
+                <span>2017.09.08</span>
+              </div>
+            </div>
+          </li>
+          <li class="photo_li">
+            <a href="" class="news_img">
+              <img src="images/main/pt_news_02.jpeg" alt="">
+            </a>
+            <div class="news_container">
+              <div class="news_title">
+                <a href="">[행사] 해외 석학 초빙 세미나 (2017.08.17)</a>
+              </div>
+              <div class="news_contents">
+                <a  href="">2017.08.17(목) 11:00 ~ 13:00해외 석학 초빙 세미나 개최 - 전수 (미국 워터루대학교 교수)</a>
+              </div>
+              <div class="news_date">
+                <span>2017.09.08</span>
+              </div>
+            </div>
+          </li>
+          <li class="text_li">
+            <a href="">[행사] 해외 석학 초빙 세미나 (2017.09.01)</a>
+          </li>
+          <li class="text_li">
+            <a href="">[행사] 해외 석학 초빙 세미나 (2017.08.17)</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- notice_news -->
+
+    <section class="promotion_slide">
+      <h2>SSEV 연구인력</h2>
+      <div class="promotion_slide_wrapper">
+        <div class="promotion_slide_inner">
+          <div class="slide_btn_group">
+            <button type="button" name="button" class="prev_btn"></button>
+            <button type="button" name="button" class="next_btn"></button>
+          </div>
+          <ul id="promotion_slider">
+            <li>
+              <div class="slider_img">
+                <a href="">
+                  <img src="images/main/solider01.jpeg" alt="">
+                </a>
+              </div>
+              <div class="slider_desc">
+                <a href="">
+                  <div class="slider_title">
+                    <span>네트워크컴퓨팅실험실</span>
+                  </div>
+                  <div class="slider_contact">
+                    <span>02)910-5349</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="slider_img">
+                <a href="">
+                  <img src="images/main/solider02.jpeg" alt="">
+                </a>
+              </div>
+              <div class="slider_desc">
+                <a href="">
+                  <div class="slider_title">
+                    <span>차량지능실험실</span>
+                  </div>
+                  <div class="slider_contact">
+                    <span>02)910-5578/5144</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="slider_img">
+                <a href="">
+                  <img src="images/main/solider03.jpeg" alt="">
+                </a>
+              </div>
+              <div class="slider_desc">
+                <a href="">
+                  <div class="slider_title">
+                    <span>응용음향및진동제어연구실</span>
+                  </div>
+                  <div class="slider_contact">
+                    <span>02)910-5679</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="slider_img">
+                <a href="">
+                  <img src="images/main/solider04.jpeg" alt="">
+                </a>
+              </div>
+              <div class="slider_desc">
+                <a href="">
+                  <div class="slider_title">
+                    <span>IT보안연구실</span>
+                  </div>
+                  <div class="slider_contact">
+                    <span>02)910-5606</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="slider_img">
+                <a href="">
+                  <img src="images/main/solider05.jpeg" alt="">
+                </a>
+              </div>
+              <div class="slider_desc">
+                <a href="">
+                  <div class="slider_title">
+                    <span>제어시스템연구실</span>
+                  </div>
+                  <div class="slider_contact">
+                    <span>02)910-5646</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="slider_img">
+                <a href="">
+                  <img src="images/main/solider06.jpeg" alt="">
+                </a>
+              </div>
+              <div class="slider_desc">
+                <a href="">
+                  <div class="slider_title">
+                    <span>유비쿼터스융합기술연구실</span>
+                  </div>
+                  <div class="slider_contact">
+                    <span>02)910-5072</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="slider_img">
+                <a href="">
+                  <img src="images/main/solider07.jpeg" alt="">
+                </a>
+              </div>
+              <div class="slider_desc">
+                <a href="">
+                  <div class="slider_title">
+                    <span>컴퓨터공학실험실</span>
+                  </div>
+                  <div class="slider_contact">
+                    <span>02)910-5063</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="slider_img">
+                <a href="">
+                  <img src="images/main/solider08.jpeg" alt="">
+                </a>
+              </div>
+              <div class="slider_desc">
+                <a href="">
+                  <div class="slider_title">
+                    <span>정보및제어연구실</span>
+                  </div>
+                  <div class="slider_contact">
+                    <span>02)910-5066</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="slider_img">
+                <a href="">
+                  <img src="images/main/solider09.jpeg" alt="">
+                </a>
+              </div>
+              <div class="slider_desc">
+                <a href="">
+                  <div class="slider_title">
+                    <span>전력전자연구실</span>
+                  </div>
+                  <div class="slider_contact">
+                    <span>02)910-5071</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="slider_img">
+                <a href="">
+                  <img src="images/main/solider10.jpeg" alt="">
+                </a>
+              </div>
+              <div class="slider_desc">
+                <a href="">
+                  <div class="slider_title">
+                    <span>전기차시스템연구실</span>
+                  </div>
+                  <div class="slider_contact">
+                    <span>02)910-5579</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- promotion_slide -->
+
+    <section class="business_perfomance">
+      <div class="perfomance_wrapper">
+        <h2>사업성과</h2>
+        <ul class="perfomance_list">
+          <li>
+            <a href="">
+              <img src="images/main/thesis.png" alt="">
+              <h3>
+                <span>thesis</span>
+                <span>논문</span>
+              </h3>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/main/thesis.png" alt="">
+              <h3>
+                <span>patent</span>
+                <span>특허 및 기술이전</span>
+              </h3>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/main/thesis.png" alt="">
+              <h3>
+                <span>international</span>
+                <span>국제화활동</span>
+              </h3>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/main/thesis.png" alt="">
+              <h3>
+                <span>ssev event</span>
+                <span>사업단 행사 개최</span>
+              </h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- business_perfomance -->
+
+    <section class="links">
+      <div class="links_wrapper">
+        <h2>link</h2>
+        <ul class="link_list">
+          <li>
+            <a href="">
+              <img src="images/main/link01.jpeg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/main/link02.jpeg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/main/link03.jpeg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- links -->
+    <footer>
+      <div class="footer_wrapper">
+        <img src="images/main/footer_img.png" alt="">
+        <div class="information">
+          <address>
+            <span>02707 서울특별시 성북구 정릉로 77 국민대학교 7호관 432호 대표전화 : 02-910-5652</span>
+            <span>E-mail : leeseul1008@kookmin.ac.kr </span>
+          </address>
+          <span>COPYRIGHT BY 국민대학교 SSEV 특화전문인력양성사업단. ALL RIGHTS RESERVED.</span>
+        </div>
+        <select name="family_site">
+          <option value="" selected>Family Site</option>
+          <option value="국민대학교">국민대학교</option>
+          <option value="국민대학교대학원">국민대학교대학원</option>
+          <option value="BrainKorea21">BrainKorea21</option>
+        </select>
+      </div>
+    </footer>
+  </div> <!-- wrapper -->
+</body>
+</html>
