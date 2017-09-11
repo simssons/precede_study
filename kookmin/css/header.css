@@ -1,0 +1,18 @@
+/*header*/
+header { height:120px; background: url(../images/main/header_gray.jpeg) left top repeat-x;}
+.inner{position: relative; overflow: hidden;  background-color: rgba(255,255,255,0.95); z-index: 10; }
+span.blue_line{ width: 100%; position: absolute; top:89px; border:1px #15a2ee solid;}
+.top_menu { width:1200px; height:30px; text-align: right; margin:0 auto;}
+
+.top_menu a { text-transform: uppercase; line-height: 30px; margin-left: 18px; font-size: 11px;}
+.navigation { width: 1200px; margin:0 auto; height: 90px; }
+.navigation h1 { float:left; margin-top:16px;}
+.gnb {float: right;}
+.gnb>li { float: left; width: 130px; line-height: 90px; text-align: center; }
+.gnb li a:hover{color:#15a2ee; font-weight: bold;}
+.gnb>li>a { color:#666666;font-size: 17px; display: block;}
+
+.gnb_scd_depth { height:208px; display: none; padding:15px 0 0 15px; box-sizing: border-box; border-left: 1px solid rgb(221, 221, 221);}
+.gnb_scd_depth:after {content: ""; display: block; clear: both;  }
+.gnb_scd_depth li { height: auto; line-height: 34px; text-align: left; float: left; width: 100%;}
+.gnb_scd_depth li a { display: block; color:#555555; font-size: 14px; }

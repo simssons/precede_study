@@ -1,23 +1,5 @@
 
-.ir{text-indent: -9999; position: absolute; left: -9999; top:-9999; font-size: 0;}
-/*header*/
-header { height:120px; background: url(images/main/header_gray.jpeg) left top repeat-x;}
-.inner{position: relative; overflow: hidden;  background-color: rgba(255,255,255,0.95); z-index: 10; }
-span.blue_line{ width: 100%; position: absolute; top:89px; border:1px #15a2ee solid;}
-.top_menu { width:1200px; height:30px; text-align: right; margin:0 auto;}
 
-.top_menu a { text-transform: uppercase; line-height: 30px; margin-left: 18px; font-size: 11px;}
-.navigation { width: 1200px; margin:0 auto; height: 90px; }
-.navigation h1 { float:left; margin-top:16px;}
-.gnb {float: right;}
-.gnb>li { float: left; width: 130px; line-height: 90px; text-align: center; }
-.gnb li a:hover{color:#15a2ee; font-weight: bold;}
-.gnb>li>a { color:#666666;font-size: 17px; display: block;}
-
-.gnb_scd_depth { height:208px; display: none; padding:15px 0 0 15px; box-sizing: border-box; border-left: 1px solid rgb(221, 221, 221);}
-.gnb_scd_depth:after {content: ""; display: block; clear: both;  }
-.gnb_scd_depth li { height: auto; line-height: 34px; text-align: left; float: left; width: 100%;}
-.gnb_scd_depth li a { display: block; color:#555555; font-size: 14px; }
 
 
 /*slide_section*/
@@ -32,9 +14,9 @@ span.blue_line{ width: 100%; position: absolute; top:89px; border:1px #15a2ee so
 }
 button.btn_on{ background: #15a2ee;  width: 41px; height: 16px; border-radius: 20px;}
 
-.slide_01{ background: url(images/main/slide_01.jpeg) top center no-repeat;}
-.slide_02{ display: none; background: url(images/main/slide_02.jpeg) top center no-repeat;}
-.slide_03{ display: none; background: url(images/main/slide_03.jpeg) top center no-repeat;}
+.slide_01{ background: url(../images/main/slide_01.jpeg) top center no-repeat;}
+.slide_02{ display: none; background: url(../images/main/slide_02.jpeg) top center no-repeat;}
+.slide_03{ display: none; background: url(../images/main/slide_03.jpeg) top center no-repeat;}
 
 
 
@@ -46,7 +28,7 @@ button.btn_on{ background: #15a2ee;  width: 41px; height: 16px; border-radius: 2
 .notice_news h2{font-size: 22px; color:rgb(68,68,68); font-weight: bold;}
 .more_link{
   font-size: 13px; color: #666666; line-height: 20px; position: absolute; top:5px; right:0; padding-right: 24px;
-  background: url(images/main/more.jpeg) center right no-repeat;
+  background: url(../images/main/more.jpeg) center right no-repeat;
 }
 
 /*notice*/
@@ -80,7 +62,7 @@ button.btn_on{ background: #15a2ee;  width: 41px; height: 16px; border-radius: 2
 .news_date span{font-size: 13px; color: #888888;}
 
 .news_feed_list li:nth-child(3){margin-top: 30px;}
-.text_li{ background: url(images/main/list_style.jpeg) 0 center no-repeat; padding-left: 12px; }
+.text_li{ background: url(../images/main/list_style.jpeg) 0 center no-repeat; padding-left: 12px; }
 .text_li a{font-size: 16px; color: #222222; line-height: 32px; }
 
 
@@ -91,8 +73,8 @@ button.btn_on{ background: #15a2ee;  width: 41px; height: 16px; border-radius: 2
 .promotion_slide_wrapper{ width: 1200px; margin: 0 auto;  position: relative;}
 .promotion_slide_inner{width: 1058px; margin:0 auto; overflow: hidden; }
 
-.prev_btn{ position: absolute; top: 50%; margin-top: -15px; left:0; background: url(images/main/prev.png) center no-repeat; }
-.next_btn{ position: absolute; top: 50%; margin-top: -15px; right:0; background: url(images/main/next.png) center no-repeat}
+.prev_btn{ position: absolute; top: 50%; margin-top: -15px; left:0; background: url(../images/main/prev.png) center no-repeat; }
+.next_btn{ position: absolute; top: 50%; margin-top: -15px; right:0; background: url(../images/main/next.png) center no-repeat}
 .slide_btn_group button{width: 31px; height: 30px;  border:none; cursor: pointer;}
 
 #promotion_slider{width: 10000%;}
@@ -129,31 +111,3 @@ button.btn_on{ background: #15a2ee;  width: 41px; height: 16px; border-radius: 2
 .link_list li{display: inline-block; margin-right:77px;}
 .link_list a{line-height: 110px;}
 .link_list img{vertical-align: middle;}
-
-
-/*footer*/
-footer{ height: 126px;    background: #eeeeee; }
-.footer_wrapper{width: 1200px; height:100% ; margin: 0 auto; position: relative;}
-.footer_wrapper:before{ content:""; height: 100%; display:inline-block; vertical-align:middle;}
-.footer_wrapper img{vertical-align: middle;}
-.information{position: absolute; right: 0; top:25px; text-align: right;}
-.information span{    font-size: 12px; color: #666666; line-height: 22px;}
-select{position: absolute; right: 0; top: 82px; width: 118px; height: 24px;  background: #ffffff url(images/main/arrow_family_site.jpeg) right center no-repeat;
-  border: 1px solid #a7a7a7;  padding: 0 10px;  cursor: pointer; color:#707070;
-  -webkit-appearance: none; /* 화살표 없애기 for chrome*/
-    -moz-appearance: none;    /* 화살표 없애기 for firefox*/
-    appearance: none;         /* 화살표 없애기 공통*/
- }
- select::-ms-expand {
-    display: none;            /* 화살표 없애기 for IE10, 11*/
- }}
-
-
-
-
-
-
-
-
-
-/**/

@@ -1,0 +1,17 @@
+
+/*footer*/
+footer{ height: 126px;    background: #eeeeee; }
+.footer_wrapper{width: 1200px; height:100% ; margin: 0 auto; position: relative;}
+.footer_wrapper:before{ content:""; height: 100%; display:inline-block; vertical-align:middle;}
+.footer_wrapper img{vertical-align: middle;}
+.information{position: absolute; right: 0; top:25px; text-align: right;}
+.information span{    font-size: 12px; color: #666666; line-height: 22px;}
+select{position: absolute; right: 0; top: 82px; width: 118px; height: 24px;  background: #ffffff url(../images/main/arrow_family_site.jpeg) right center no-repeat;
+  border: 1px solid #a7a7a7;  padding: 0 10px;  cursor: pointer; color:#707070;
+  -webkit-appearance: none; /* 화살표 없애기 for chrome*/
+    -moz-appearance: none;    /* 화살표 없애기 for firefox*/
+    appearance: none;         /* 화살표 없애기 공통*/
+ }
+ select::-ms-expand {
+    display: none;            /* 화살표 없애기 for IE10, 11*/
+ }}
