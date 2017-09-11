@@ -1,0 +1,76 @@
+#intro_wrapper{
+  background: url(../images/main/background.jpeg) top center no-repeat;
+}
+
+
+/*header*/
+
+#header{ width: 1100px;  height: 151px; margin: 0 auto; }
+#header>h1{ float: left; line-height: 100px; }
+#header>h1 a{display: block; }
+#header>h1 img{ vertical-align:middle;}
+.top_menu{float: right; line-height: 100px; }
+.top_menu a{ margin-left: 10px; font-size: 10px; color: #5e605f; font-weight: bold; text-transform: uppercase; padding-left: 28px; display: inline-block; }
+.top_menu a:before{content: ""; display: block; height: 100%; vertical-align: middle;}
+.top_menu_home{background: url(../images/main/home.png) left center no-repeat;}
+.top_menu_sitemap{background: url(../images/main/sitemap.png) left center no-repeat;}
+
+/*gnb*/
+.gnb_depth_01{clear: both; text-align: center;}
+.gnb_depth_01>li{width: 16.667%; height: 50px;  line-height: 50px; float: left; box-sizing: border-box; background-color: #FFF; }
+.gnb_depth_01>li>a{display: block; height: 100%; background: #ffffff; font-size: 18px; color: #3a3a3a; font-weight: bold; transition: .5s ease;}
+
+.gnb_depth_02{ display: none; padding: 8px 0;  background: url(../images/main/list_bg.png) repeat; position: relative; z-index: 10;}
+.gnb_on{display: block;}
+.gnb_depth_02>li{height: 32px; line-height: 32px;}
+.gnb_depth_02 a{display: block;  font-size: 14px; color: #fefefe; }
+.gnb_depth_02 a:hover{color:#b1c2ff;}
+
+
+/*intro_display*/
+#intro_display{ width: 1100px; height: 200px; margin:0 auto; background: url(../images/intro/intro_display.jpeg) center center no-repeat; }
+
+/*section*/
+#section{overflow: hidden; width: 1100px; margin:0 auto 40px; border:1px #DDDDDD solid;
+  background: url(../images/intro/sec_bg.jpeg) 0 0 repeat-y;
+}
+
+#aside{ width: 218px; float: left;}
+#aside h2{ height: 100px; background: url(../images/intro/intro_foundation.jpeg) 0 0 no-repeat; font-size: 18px; color: #FFF; line-height: 100px; text-indent: 22px; }
+
+#lnb{border-top:1px solid #dddddd;}
+#lnb li{ height: 47px; width: 216px; line-height: 47px; border-bottom: 1px solid #dddddd; text-indent: 22px;}
+#lnb li a{ font-size: 14px; color: #666666; font-weight: bold; display: block;}
+#lnb li.lnb_on a{color:#b69058;}
+
+#intro_contents{width: 800px; float: right; margin-right:40px; }
+.con_title{height: 99px; border-bottom: 1px solid #dddddd; position: relative;}
+.con_title h3{ font-size: 24px; color: #000; line-height: 105px; font-weight: bold; }
+.con_path{ float: right; padding-left: 16px; background: url(../images/intro/intro_home.png) center left no-repeat; position: absolute; top:20px; right:0;}
+.con_path span{font-size: 12px; color: #888888;}
+
+#main_content{ padding: 50px 0; min-height: 500px; font-size: 14px; color: #666; line-height: 24px; overflow: hidden;}
+.left_con{width: 250px; float: left;}
+.right_con{width: 520px; float: right; margin-left: 30px;}
+.right_con h4{ font-size: 22px; color: #364ea2; font-weight: bold; line-height: 1.5;}
+.right_text{margin-top: 30px;}
+.right_text p{margin-top: 25px; color:#666; font-size: 14px;}
+.from{font-size: 16px; color: #333; font-weight: bold; text-align: right; margin-bottom: 50px;}
+
+
+
+
+/*footer*/
+#footer{width: 100%; height: 143px; background:url(../images/main/footer_bg.jpeg) 0 0 repeat-x; }
+.footer_menu{width: 1100px; height: 37px; margin: 0 auto; }
+.footer_menu a{line-height: 38px; font-size: 13px; color: #767676; font-weight: bold;}
+.footer_menu:before{content: ""; height: 100%; display: inline-block; vertical-align: middle;}
+.footer_menu_hbar{ padding-left: 14px; background: url(../images/main/footer_darkbar.jpeg) 0 50% no-repeat; margin-left:10px; }
+.footer_bottom{width: 1100px; height: 106px; margin: 0 auto; position: relative;}
+.footer_bottom h2{line-height: 106px; float: left;}
+.footer_bottom h2 img{ vertical-align: sub;}
+
+.footer_copy{font-size: 13px; color: #767676; position: absolute; left: 250px; top: 20px;}
+.footer_copy address{ font-size: 13px; color: #767676; }
+.address_bar{ margin-left: 5px; padding-left: 8px; background: url(../images/main/address_bar.jpeg) 0 50% no-repeat;}
+.footer_copy address + span{ display: block; margin-top: 10px;}
