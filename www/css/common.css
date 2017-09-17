@@ -1,10 +1,10 @@
 /* Common **********************************************************************/
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(https://fonts.googleapis.com/css?family=Exo);
-@import url(//cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css);
+/*@import url(//cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css);*/
 
 
-/* Common **********************************************************************/ 
+/* Common **********************************************************************/
 html,body {width:100%;  }
 html {/*overflow-y:scroll;*/ overflow-x:hidden; box-sizing:border-box;}
 *, *:before, *:after{box-sizing:inherit;}
@@ -20,7 +20,7 @@ blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {content:''; content:none;}
 button {border:0 none; background-color:transparent; cursor:pointer;}
 body { background:#fff;}
-body,th,td,input,select,textarea,button {font-size:13px; line-height:1.8; font-family:'NanumSquare', 'Exo' ;color:#7d7d7d;} 
+body,th,td,input,select,textarea,button {font-size:13px; line-height:1.8; font-family:'NanumSquare', 'Exo' ;color:#7d7d7d;}
 
 a:link,a:active,a:visited{color:#7d7d7d; text-decoration:none; border:0px;}
 a:hover,a:focus{color:#333; text-decoration:none}
@@ -29,7 +29,7 @@ table {border-collapse:collapse; border-spacing:0;}
 address,caption,cite,code,dfn,em,var {font-style:normal; font-weight:normal;}
 summary, caption, legend{width:0; height:0; font-size: ; line-height: ; overflow: hidden; visibility: hidden; border: none; position:absolute; left:-1000em;}
 caption {position:static;}
-/* label hidden Ã³¸® */
+/* label hidden Ã³ï¿½ï¿½ */
 .invisible{overflow:hidden; visibility:hidden; width:0; height:0; font-size:0; line-height:0; position:absolute;}
 label.invisible{*position:Absolute;}
 
@@ -48,7 +48,7 @@ label.invisible{*position:Absolute;}
 
 
 
-/* ¿©¹é */
+/* ï¿½ï¿½ï¿½ï¿½ */
 .mt1{margin-top:1px; !important;}
 .md2{margin-left:2px; !important;}
 .md1{margin-left:1px; !important;}

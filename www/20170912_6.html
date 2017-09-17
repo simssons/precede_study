@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8 ">
+<!--euc kr(국문,영문)랑 ansi랑 동일// utf-8은 다국어-->
+<meta name="robots" content="index,follow">
+<title>20170912</title>
+<link rel="stylesheet" href="css/common.css" type="text/css">
+
+</head>
+<body>
+<div class="box">
+	<div class="box_title mb20">
+		<h2>123123121231231231233</h2>
+	</div>
+	<dl>
+		<dt>이미지</dt>
+		<dd>1</dd>
+	</dl>
+	<dl class="md10">
+		<dt>이미지</dt>
+		<dd>2</dd>
+	</dl>
+	<dl class="md10">
+		<dt>이미지</dt>
+		<dd>3</dd>
+	</dl>
+	<dl class="md10">
+		<dt>이미지</dt>
+		<dd>4</dd>
+	</dl>
+	<span class="more">more</span>
+	<!-- 접근성 관점에서 more는 맨뒤 -->
+</div>
+<style>
+.box{position:relative; width:546px; height:190px; border:1px solid #dfdfdf; padding:20px;}
+.box dl{float:left; width:110px; font-size:13px; text-align:center; color:#444;}
+/*dl에서의 넓이값이 dt로 상속되지 않음*/
+.box dl dt{width:110px; height:62px; display:table-cell; vertical-align:middle; text-align:center;}
+.box_title{height:36px; border-bottom:1px solid #444;}
+.box_title h2{display:inline-block; heighT:36px; border-bottom:2px solid red;}
+.more{position:absolute; right:20px; top:20px;}
+</style>
+
+
+
+</body>
+
+
+</html>
