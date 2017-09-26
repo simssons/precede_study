@@ -3,25 +3,315 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8 ">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 <!--euc kr(국문,영문)랑 ansi랑 동일// utf-8은 다국어-->
 <meta name="robots" content="index,follow">
-<title>20170912</title>
+<title>onsesang</title>
 <link rel="stylesheet" href="css/common.css" type="text/css">
+<link rel="stylesheet" href="jquery.bxslider/jquery.bxslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="jquery.bxslider/jquery.bxslider.js"></script>
+<script>
+  $(function(){
+    //
+    // $('.lnb').css('display','none')
+    //   $('.btn_menu').toggle(function(){
+    //     $('#gnb').fadeIn()
+    //   }, function(){
+    //     $('#gnb').fadeOut()
+    //   })
+
+    var slider = $('.bxslider').bxSlider({
+      mode: 'fade',
+      auto: true,
+      autoControls: true
+    });
+    $('#slider-next').click(function(){
+      slider.goToNextSlide();
+      return false;
+    });
+    $('#slider-prev').click(function(){
+      slider.goToPrevSlide();
+      return false;
+    });
+    $('#slider-count').click(function(){
+      var count = slider.getSlideCount();
+      alert('Slide count: ' + count);
+      return false;
+    });
+
+
+  })
+
+</script>
 </head>
 <body>
-  <div id="aa">
-    <h2>온사건</h2>
-    <p class="mt5">온세상dmf 문화예술인 법률지원 센터를 운영합니다.</p>
-    <a href="#" class="more"><img src="http://lawonsesang.co.kr/mobile/images/main/btn_go.png" alt=""></a>
-
+<div id="wrapper">
+  <div id="header">
+    <h1>
+      <a href="">
+        <img src="http://lawonsesang.co.kr/mobile/images/main/logo.png" alt="법무법인 온세상">
+      </a>
+    </h1>
+    <button class="btn_menu">
+      <span class="ir">메뉴보기 닫기</span>
+    </button>
+    <ul id="gnb">
+        <li class="first_depth">
+          <a href="">법무법인 소개</a>
+          <ul class="second_depth">
+            <li>
+              <a href="">비전</a>
+            </li>
+            <li>
+              <a href="">대표 번호사 소개</a>
+            </li>
+            <li>
+              <a href="">소속 번호사 소개</a>
+            </li>
+            <li>
+              <a href="">사무실 전경</a>
+            </li>
+            <li>
+              <a href="">오시는 길</a>
+            </li>
+          </ul>
+        </li>
+        <li class="first_depth">
+          <a href="">가사소송</a>
+          <ul class="second_depth">
+            <li>
+              <a href="#">이혼소송</a>
+            </li>
+            <li>
+              <a href="#">동행 프로젝트</a>
+            </li>
+            <li>
+              <a href="#">가정폭력 피해자 지원</a>
+            </li>
+            <li>
+              <a href="#">상속, 후견인제도</a>
+            </li>
+          </ul>
+        </li>
+        <li class="first_depth">
+          <a href="">성폭력 범죄</a>
+          <ul class="second_depth">
+            <li>
+              <a href="#">성폭력 피해자 대리</a>
+            </li>
+            <li>
+              <a href="#">성폭력 피해자 상담</a>
+            </li>
+          </ul>
+        </li>
+        <li class="first_depth">
+          <a href="">민, 형사</a>
+          <ul class="second_depth">
+            <li>
+              <a href="#">민사소송</a>
+            </li>
+            <li>
+              <a href="#">형사소송</a>
+            </li>
+          </ul>
+        </li>
+        <li class="first_depth">
+          <a href="">채권추심</a>
+          <ul class="second_depth">
+            <li>
+              <a href="#">채권추심</a>
+            </li>
+          </ul>
+        </li>
+        <li class="first_depth">
+          <a href="">외국인</a>
+          <ul class="second_depth">
+            <li>
+              <a href="#">출입국업무</a>
+            </li>
+            <li>
+              <a href="#">국제결혼</a>
+            </li>
+          </ul>
+        </li>
+        <li class="first_depth">
+          <a href="">온뉴스</a>
+          <ul class="second_depth">
+            <li>
+              <a href="#">미디어</a>
+            </li>
+            <li>
+              <a href="#">온사건</a>
+            </li>
+            <li>
+              <a href="#">강의일정</a>
+            </li>
+            <li>
+              <a href="#">칼럼</a>
+            </li>
+            <li>
+              <a href="#">영상</a>
+            </li>
+          </ul>
+        </li>
+        <li class="first_depth">
+          <a href="">문화예술인 법률지원센터</a>
+          <ul class="second_depth">
+            <li>
+              <a href="#">설립취지</a>
+            </li>
+            <li>
+              <a href="#">계약분쟁</a>
+            </li>
+            <li>
+              <a href="#">저작권</a>
+            </li>
+            <li>
+              <a href="#">초상권 · 퍼블리시티권</a>
+            </li>
+            <li>
+              <a href="#">명예훼손, 각종 형사문제</a>
+            </li>
+            <li>
+              <a href="#">이혼</a>
+            </li>
+            <li>
+              <a href="#">쌀롱 온 자료실</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    <!-- gnb -->
   </div>
+  <!-- header -->
+  <div id="section01">
+    <h2 class="ir">메인슬라이드</h2>
+    <ul class="bxslider">
+      <li><img src="http://lawonsesang.co.kr/mobile/images/main/visual2.jpg" /></li>
+      <li><img src="http://lawonsesang.co.kr/mobile/images/main/visual4.jpg" /></li>
+      <li><img src="http://lawonsesang.co.kr/mobile/images/main/visual6.jpg" /></li>
+    </ul>
+    <div class="controler">
+      <a href="" id="slider-next">Click me to go to the next slide</a>
+      <a href="" id="slider-prev">Click me to go to the next slide</a>
+    </div>
+  </div>
+  <!-- section01 -->
+  <div id="section02">
+    <h2 class="ir">메뉴</h2>
+    <ul class="menu_list">
+      <li class="m01">
+        <a href="#">민 · 형사</a>
+      </li>
+      <li class="m02">
+        <a href="#">이혼</a>
+      </li>
+      <li class="m03">
+        <a href="#">외국인</a>
+      </li>
+      <li class="m04">
+        <a href="#">가정폭력</a>
+      </li>
+      <li class="m05">
+        <a href="#">성폭력</a>
+      </li>
+      <li class="m06">
+        <a href="#">온 · 뉴스</a>
+      </li>
+    </ul>
+    <div id="go_menu01">
+      <h3>온사건</h3>
+      <p class="mt5">온세상dmf 문화예술인 법률지원 센터를 운영합니다.</p>
+      <a href="#" class="more"><img src="http://lawonsesang.co.kr/mobile/images/main/btn_go.png" alt=""></a>
+    </div>
+    <div id="go_menu01" class="go_menu02_bg">
+      <h3>동행프로젝트</h3>
+      <p class="mt5">법무법인 온 · 세상의 소통, 공감프로젝트입니다.</p>
+      <a href="#" class="more"><img src="http://lawonsesang.co.kr/mobile/images/main/btn_go.png" alt=""></a>
+    </div>
+    <div id="go_menu01">
+      <h3>김재련 갈등치유센터</h3>
+      <p class="mt5">온온 · 세상은 심리상담 센터를 운영합니다.</p>
+      <a href="#" class="more"><img src="http://lawonsesang.co.kr/mobile/images/main/btn_go.png" alt=""></a>
+    </div>
+  </div>
+  <!-- section02 -->
+  <div id="footer">
+    <h2 class="ir">footer</h2>
+    <div class="contact_address contact">
+      <h3>상담문의</h3>
+      <span class="mt5">
+        <a href="">02) 599-7700</a>
+      </span>
+      <span>
+        <a href="">010-5359-5892</a>
+      </span>
+    </div>
+    <div class="contact_address address">
+      <h3>오시는 길</h3>
+      <address class="mt10">
+        <a href="">서울시 서초구 서초중앙로 26길 13, 5층, 6층, 7층 (서초동 1697-15)</a>
+      </address>
+    </div>
+    <div class="footer_bottom">
+      <h3>법무법인 온 · 세상</h3>
+      <address>서울시 서초구 서초중앙로 26길 13, 5층, 6층, 7층 (서초동 1697-15)</address>
+      <span class="footer_contact"> TEL : 02-599-7700(대)   FAX : 02-599-9100   상담전화 : 010-5359-5892 </span></br>
+      <span class="legal">Copyright © 2015 법무법인온·세상. All Right Reserved.</span>
+    </div>
+  </div>
+
+</div>
+<!-- wrapper -->
 </body>
 <style>
-#aa{height:110px; padding:10px 15%  20px; background:#9a7525; position: relative;}
-h2 {font-size:22px;  color:#FFF;}
-p{ font-size:12px; color:#e9d3c1; }
+#header{height: 100px; background:#FFF; position: relative;}
+#header h1{position:absolute; top:20px; right:0; left:0;  text-align:center; }
+.btn_menu{width:22px; height:22px; background:url(http://lawonsesang.co.kr/mobile/images/main/btn_menu.png) center no-repeat; position:absolute; right:25px; top:38px; outline:none; }
+#gnb{ display:none; width:80%; height:100%; position: fixed; background:#B58E6F; }
+#gnb > li{height:49px; border-bottom:1px solid #7b5a42; line-height:49px; font-size: 18px; text-indent: 5%;  }
+#gnb a{color:#FFF; font-weight:bold; }
+#gnb ul{display:none; }
+.second_depth li{height:34px; line-height:34px; text-indent:7%; font-size:12px; border-bottom:1px #7b5a42 solid; background:#62442e }
+
+#section01{position:relative; }
+#slider-next{width:45px; height:45px; display:block; background:url(http://lawonsesang.co.kr/mobile/images/main/next.png) center no-repeat; position:absolute; margin-top:-22.5px; top:50%; right:0; font-size:0; z-index: 10;}
+#slider-prev{width:45px; height:45px; display:block; background:url(http://lawonsesang.co.kr/mobile/images/main/prev.png) center no-repeat; position:absolute; margin-top:-22.5px; top:50%; left:0; font-size:0; z-index: 10;}
+
+.menu_list{padding:1%;  background:#3f2413}
+.menu_list:after{content:""; display: block; clear:both; height:0; }
+.menu_list li{width:31%; float: left; height:135px; margin:0.5% 1%;}
+.menu_list li a{display:block; color:#FFF; font-size: 20px; font-weight:bold; text-align:center; height:100%;}
+.menu_list li a:before{content: ""; display: inline-block; height:100%;  vertical-align: middle; }
+.m01{background:url(http://lawonsesang.co.kr/mobile/images/main/bg01.png) center no-repeat; background-size:contain;}
+.m02{background:url(http://lawonsesang.co.kr/mobile/images/main/bg02.png) center no-repeat; background-size:contain;}
+.m03{background:url(http://lawonsesang.co.kr/mobile/images/main/bg03.png) center no-repeat; background-size:contain; }
+.m04{background:url(http://lawonsesang.co.kr/mobile/images/main/bg04.png) center no-repeat; background-size:contain; }
+.m05{background:url(http://lawonsesang.co.kr/mobile/images/main/bg05.png) center no-repeat; background-size:contain; }
+.m06{background:url(http://lawonsesang.co.kr/mobile/images/main/bg06.png) center no-repeat; background-size:contain; }
+
+#go_menu01{min-height:110px; padding:20px 15% 20px 5%; background:#9a7252; position: relative; border-bottom:1px solid #3F2413; }
+.go_menu02_bg{background:#65554C !important;}
+#go_menu01 h3 {font-size:22px;  color:#FFF;}
+#go_menu01 p{ font-size:12px; color:#e9d3c1; }
 .more{position:absolute; right:5%; top:40%; }
 
+.contact_address{width:50%; height:150px; float:left;  padding:20px 15% 20px 5%; background:#D3C3B7;}
+/*여기서 min-height 하면 이상한데 */
+
+.contact h3{color:#614c3f; font-size:18px;}
+.contact span{display:block; font-size:20px; line-height: 1.5;}
+.contact span:last-child a {font-size:18px;}
+.contact a{color:#74062A; font-weight:bold;}
+
+.address{background:#74062A url(http://lawonsesang.co.kr/mobile/images/main/map.png) 90% center no-repeat; }
+.address h3{color:#614c3f; font-size:18px; color:#d3c3b7;}
+.address a{color:#d3c3b7; font-size:14px; }
+
+.footer_bottom{min-height:140px; background:#3F2413; padding:20px 3%; clear:both; color:#edd3bf;}
+.footer_bottom h3{color:#FFF; font-size:15px;}
+.footer_bottom address{display: inline-block;}
 
 </style>
 </html>

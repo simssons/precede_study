@@ -46,7 +46,7 @@
     keyboardEnabled: false,
 
     // PAGER
-    pager: true,
+    pager: false,
     pagerType: 'full',
     pagerShortSeparator: ' / ',
     pagerSelector: null,
@@ -54,7 +54,7 @@
     pagerCustom: null,
 
     // CONTROLS
-    controls: true,
+    controls: false,
     nextText: 'Next',
     prevText: 'Prev',
     nextSelector: null,
@@ -66,8 +66,8 @@
     autoControlsSelector: null,
 
     // AUTO
-    auto: false,
-    pause: 4000,
+    auto: true,
+    pause: 3000,
     autoStart: true,
     autoDirection: 'next',
     stopAutoOnClick: false,

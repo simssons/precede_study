@@ -6,9 +6,34 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 <!--euc kr(국문,영문)랑 ansi랑 동일// utf-8은 다국어-->
 <meta name="robots" content="index,follow">
-<title>20170912</title>
+<title>spub</title>
 <link rel="stylesheet" href="css/common.css" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(function(){
+    var a = 0;
+  $( ".menu_list" ).click(function() {
+    $("#gnb").toggle();
+    if(a==0){
+      $('.menu_list').css('background-position','-28px center');
+      a = 1;
+    }else{
+      $('.menu_list').css('background-position','');
+      a = 0;
+    }
+  });
+
+  // Tab menu
+  $('.tab_menu_a').click(function(event){
+    event.preventDefault();
+    if($(this).is('.active')==false){
+      $(this).addClass('active').parent('li').siblings('li').find('a').removeClass('active');
+    }
+  })
+
+})
+
+</script>
 </head>
 <body>
 <div id="wrapper">
@@ -17,8 +42,8 @@
         <img src="http://www.spub.co.kr/mobile/images/main/logo.png" alt="">
       </h1>
       <a href="#" id="log_in"></a>
-      <button class="open_list">
-        <span class="ir">리스트보기</span>
+      <button class="menu_list">
+        <span class="ir">리스트보기 닫기</span>
       </button>
       <ul id="gnb">
         <li>
@@ -55,7 +80,7 @@
     <h2 class="ir">인기게시물</h2>
     <ul class="hot_best">
       <li>
-        <a href="#" class="active">실시간 인기 게시물</a>
+        <a href="#" class="active tab_menu_a">실시간 인기 게시물</a>
         <ul class="hot_list sec01_list active">
           <li>
             <a href="#">
@@ -120,7 +145,7 @@
         </ul>
       </li>
       <li>
-        <a href="#">베스트 오브 베스트</a>
+        <a href="#" class="tab_menu_a">베스트 오브 베스트</a>
         <ul class="best_list sec01_list">
           <li>
             <a href="#">
@@ -229,8 +254,8 @@
     <h2 class="ir">일반 스포츠 게임 문화 게시판</h2>
     <ul class="four_columns">
       <li>
-        <a href="#" class="active">일반</a>
-        <ul class="sec04_list active">
+        <a href="#" class="active tab_menu_a">일반</a>
+        <ul class="sec04_list sec0401 active">
           <li>
             <a href="#">
               [자유] 세상에서 가장 어려운 넌센스 퀴즈
@@ -294,17 +319,17 @@
         </ul>
       </li>
       <li>
-        <a href="#" class="">스포츠</a>
-        <ul class="sec04_list">
+        <a href="#" class="tab_menu_a">스포츠</a>
+        <ul class="sec04_list sec0402">
           <li>
             <a href="#">
-              [자유] 세상에서 가장 어려운 넌센스 퀴즈
+              [자유] 세상에섴ㅋ제일배고픈나라를ㅋㅋ…
               <span></span>
             </a>
           </li>
           <li>
             <a href="#">
-              [자유] 세상에섴ㅋ제일배고픈나라를ㅋㅋ…
+              [자유] 세상에서 가장 어려운 넌센스 퀴즈
               <span></span>
             </a>
           </li>
@@ -359,11 +384,11 @@
         </ul>
       </li>
       <li>
-        <a href="#" class="">게임</a>
-        <ul class="sec04_list">
+        <a href="#" class="tab_menu_a">게임</a>
+        <ul class="sec04_list sec0403">
           <li>
             <a href="#">
-              [자유] 세상에서 가장 어려운 넌센스 퀴즈
+              [자유] 대륙의 축구선수 대우
               <span></span>
             </a>
           </li>
@@ -375,7 +400,7 @@
           </li>
           <li>
             <a href="#">
-              [자유] 대륙의 축구선수 대우
+            [자유] 세상에서 가장 어려운 넌센스 퀴즈
               <span></span>
             </a>
           </li>
@@ -424,8 +449,8 @@
         </ul>
       </li>
       <li>
-        <a href="#" class="">문화</a>
-        <ul class="sec04_list">
+        <a href="#" class="tab_menu_a">문화</a>
+        <ul class="sec04_list sec0404">
           <li>
             <a href="#">
               [자유] 세상에서 가장 어려운 넌센스 퀴즈
@@ -513,8 +538,7 @@
 </div> <!-- wrapper-->
 </body>
 <style>
-/*option*/
-.ir{position:absolute; top:-9999px; left:-9999px; text-indent:-9999px; font-size:0; }
+
 
 #header{height:70px; background:#2968c0; position:relative; }
 #header h1{position: absolute; left:10px; top:10px; }
@@ -522,10 +546,10 @@
         padding-right: 5px;  background:url(http://www.spub.co.kr/mobile/images/main/login.png), url(http://www.spub.co.kr/mobile/images/main/bar2.jpg);
         background-position: left center, right center; background-repeat: no-repeat; }
 
-.open_list{position:absolute; right: 32px; top:20px; width:25px; height:25px; background: url(http://www.spub.co.kr/mobile/images/main/btn_menu.png) 4px 4px no-repeat; }
+.menu_list{position:absolute; right: 32px; top:20px; width:25px; height:25px; background: url(http://www.spub.co.kr/mobile/images/main/btn_menu.png) 4px 4px no-repeat;  outline: none; }
 
-#gnb{ display:none;  width:68%; background:#FFF; position:absolute; top:70px; right:0; }
-#gnb a{ display: block; height: 39px; border-bottom: 1px #ececec solid ; font-size: 13px; color: #636363; line-height: 39px;text-indent: 15px;}
+#gnb{ display:none;  width:68%; background:#FFF; position:absolute; top:70px; right:0; z-index:10; }
+#gnb li a{ display: block; height: 39px; border-bottom: 1px #ececec solid ; font-size: 13px; color: #636363; line-height: 39px;text-indent: 15px;}
 #gnb a:hover{background:#003886; color:#FFF; }
 .del_bottom{border-bottom:none !important;}
 
@@ -533,9 +557,11 @@
 .hot_best > li{width:50%; line-height:39px; float:left; }
 /*height:39px;???????????? */
 .hot_best > li > a{ display:block; height:100%; text-align:center;  border-bottom:1px #D8D8D8 solid; font-size:15px; font-weight:bold; color:#000;  }
-.hot_best > li > a.active{background:#555555; color:#FFF; border-bottom:none; }
-.hot_best .sec01_list {  display:none; height:265px; width:200%; background:#FFF; padding:15px 5%;}
-.hot_best ul.active{display:block;}
+.hot_best > li > a.active{background:#555555; color:#FFF; border-bottom:1px #555555 solid; }
+.hot_best .sec01_list {  display:none; height:265px; width:200%; background:#FFF; padding:15px 5%; }
+.hot_best > li:last-child ul{position: relative; left:-100%;}
+
+.hot_best > li > a.active + ul{display:block;}
 
 .sec01_list li{text-align:left; margin-bottom:6px; padding-left:10px; background:url(http://www.spub.co.kr/mobile/images/main/dot.jpg) left center no-repeat; height:18px; line-height: 1.5; font-size:12px;}
 .sec01_list li a{color:#000;}
@@ -558,14 +584,20 @@
 #section04{overflow: hidden;}
 .four_columns > li {float:left; width:25%; line-height:39px;}
 .four_columns > li > a{ display:block; height:100%; text-align:center;  border-bottom:1px #D8D8D8 solid; font-size:15px; font-weight:bold; color:#000; background:#efefef url(http://www.spub.co.kr/mobile/images/main/tab_line.jpg) 0 0 no-repeat;}
-.four_columns > li > a.active{background:#555555; color:#FFF; border-bottom:none; }
+.four_columns > li > a.active{background:#555555; color:#FFF; border-bottom:1px #555555 solid; }
 .four_columns .sec04_list {  display:none; height:265px; width:400%; background:#FFF; padding:15px 10%;}
-.four_columns ul.active{display:block;}
+.four_columns > li > a.active + ul{display:block;}
+
+.sec0401{position: relative; left:0%;}
+.sec0402{position: relative; left:-100%;}
+.sec0403{position: relative; left:-200%;}
+.sec0404{position: relative; left:-300%;}
+
 
 .sec04_list li{text-align:left; margin-bottom:6px; padding-left:10px; background:url(http://www.spub.co.kr/mobile/images/main/dot.jpg) left center no-repeat; height:18px; line-height: 1.5; font-size:12px;}
 .sec04_list li a{color:#000;}
 .sec04_list a span{color:#bc2c2c; font-weight:bold; margin-left:10px; }
-.sec04_list:after{content:""; display: block; clear:both; }
+/*.sec04_list:after{content:""; display: block; clear:both; }*/
 
 #footer{min-height: 94px; background:#464646; padding:10px 2.5%; text-align:center;}
 .footer_menu{font-size:0;  border-bottom:1px #767676 solid; }
